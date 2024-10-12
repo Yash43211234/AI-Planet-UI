@@ -6,6 +6,9 @@ import CreateChallenge from './Routers/CreateChallenge';
 import ChallengeDetails from './ChallengeDetails';
 import ChallengePage from './ChallengePage';
 
+import ParentComponent from './ParentComponent'
+
+
 function App() {
   return (
    
@@ -17,7 +20,7 @@ function App() {
           <Route path='/createChallenge' element={<CreateChallenge/>}  />
           <Route path="/challenge/:index" element={<ChallengePage/>} />
           <Route path="/challenge/update/:index" element={<ChallengeDetails/>} />
-          
+          <Route path='/ParentComponent' element={<ParentComponent/>}  />
         </Routes>
       </Router>
     </div>
